@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="row col-12">
+        <h1 class="text-center">Datos obtenidos de Postgresql</h1>
+      </header>
+      <main>
+        <div class="card-group row col-12">
+          <div class="card text-white bg-dark m-2">
+            <div class="card-header">{{persona.id}}</div>
+            <div class="card-body">
+              <h5 class="card-title">{{persona.nombre}}</h5>
+              <div class="card-text">Email : {{persona.email}}</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
